@@ -47,7 +47,7 @@ namespace CSharpNotes
             Console.WriteLine(mightBeNull?.Length);
 
             // null coalescing ??
-            Console.WriteLine(mightBeNull ?? "null val");
+            Console.WriteLine(mightBeNull ?? "mightBeNull is null");
         }
     }
 }

@@ -6,7 +6,10 @@ namespace CSharpNotes
     {
         static void Main(string[] args)
         {
-            Conditionals.Demo();
+            // Conditionals.Demo();
+            // Looping.Demo();
+            // ArraysListsSets.Demo();
+            Strings.Demo();
         }
     }
 }
