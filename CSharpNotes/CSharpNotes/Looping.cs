@@ -40,6 +40,21 @@ namespace CSharpNotes
                 Console.WriteLine(counter);
                 counter++;
             }
+
+            foreach (char c in "Spam, Spam, Spam, egg and Spam")
+            {
+                if (c == 'p')
+                {
+                    continue;
+                }
+                else if (c == 'e')
+                {
+                    break;
+                }
+                Console.Write(c);
+            }
+            Console.WriteLine();
+
         }
     }
 }
