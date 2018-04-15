@@ -11,7 +11,8 @@ namespace CSharpNotes
             // ArraysListsSetsDicts.Demo();
             // Strings.Demo();
             // LinqQ.Demo();
-            ExceptionHandling.Demo();
+            // ExceptionHandling.Demo();
+            LambdasDelegates.Demo();
         }
     }
 }
