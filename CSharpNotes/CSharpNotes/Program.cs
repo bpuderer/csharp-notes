@@ -8,9 +8,10 @@ namespace CSharpNotes
         {
             // Conditionals.Demo();
             // Looping.Demo();
-            // ArraysListsSets.Demo();
+            // ArraysListsSetsDicts.Demo();
             // Strings.Demo();
-            LinqQ.Demo();
+            // LinqQ.Demo();
+            ExceptionHandling.Demo();
         }
     }
 }

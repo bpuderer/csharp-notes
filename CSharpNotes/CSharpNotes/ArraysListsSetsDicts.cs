@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CSharpNotes
 {
-    public static class ArraysListsSets
+    public static class ArraysListsSetsDicts
     {
         public static void Demo()
         {
@@ -36,8 +36,7 @@ namespace CSharpNotes
             Console.WriteLine("Is strList empty? " + !strList.Any());
 
 
-            // Set
-            // also SortedSet
+            // Set. also SortedSet
             HashSet<int> intHashSet = new HashSet<int>();
             intHashSet.Add(4);
             intHashSet.Add(9);
@@ -48,6 +47,26 @@ namespace CSharpNotes
             Console.WriteLine(string.Join(",", intHashSet));
             intHashSet.RemoveWhere(s => s % 2 == 0);
             Console.WriteLine("Even numbers removed: " + string.Join(",", intHashSet));
+
+            // Dictionary. also SortedDictionary
+            Dictionary<string, long> phonebook = new Dictionary<string, long>();
+            phonebook.Add("Guido", 1235555678);
+            phonebook["Raymond"] = 3215559876;  // indexer
+            // KeyValuePair
+            foreach(var kvp in phonebook)
+            {
+                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+            }
+
+            // phonebook["Alex"] = 4565555555;
+            // TryGetValue faster than catching KeyNotFoundException. almost O(1)
+            if (phonebook.TryGetValue("Alex", out long val)) {
+                Console.WriteLine($"Alex: {val}");
+            }
+            else
+            {
+                Console.WriteLine("Alex not found in phonebook");
+            }
 
         }
     }
