@@ -12,7 +12,10 @@ namespace CSharpNotes
             // Strings.Demo();
             // LinqQ.Demo();
             // ExceptionHandling.Demo();
-            LambdasDelegates.Demo();
+            // LambdasDelegates.Demo();
+            // Methods.Demo();
+            // Misc.Demo();
+            DatesTimes.Demo();
         }
     }
 }

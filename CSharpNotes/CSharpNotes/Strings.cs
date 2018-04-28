@@ -51,7 +51,7 @@ namespace CSharpNotes
             Console.WriteLine(sWithWhitespace);
             Console.WriteLine(sWithWhitespace.Trim());
 
-            // strings
+            // strings are immutable. StringBuilder for efficiency
             StringBuilder sb = new StringBuilder();
             for (int i=0; i < 5; i++)
             {
