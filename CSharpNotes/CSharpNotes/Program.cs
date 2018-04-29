@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpNotes.Classes;
+using System;
 
 namespace CSharpNotes
 {
@@ -15,7 +16,11 @@ namespace CSharpNotes
             // LambdasDelegates.Demo();
             // Methods.Demo();
             // Misc.Demo();
-            DatesTimes.Demo();
+            // DatesTimes.Demo();
+            ClassDemo.Demo();
+
+            Console.ReadLine();
+
         }
     }
 }

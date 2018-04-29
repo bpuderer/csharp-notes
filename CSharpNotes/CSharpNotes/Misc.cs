@@ -11,6 +11,8 @@ namespace CSharpNotes
         {
             // ^E^F format selection, ^E^D format doc
 
+            // Tools > NuGet Package Manager > Manage NuGet Packages for Solution...
+
             Random rnd = new Random();
             Console.WriteLine(String.Format("Random num: {0}", rnd.Next()));
             Console.WriteLine(String.Format("Random num [3..28]: {0}", rnd.Next(3, 29)));
@@ -21,7 +23,11 @@ namespace CSharpNotes
             {
                 Console.WriteLine(num);
             }
-            
+
+            // nullable type. can use any value type
+            int? x = null;
+            int y = x ?? -1;
+            Console.WriteLine(String.Format("x: {0}, y: {1}", x, y));
         }
     }
 }
