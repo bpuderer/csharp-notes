@@ -32,7 +32,8 @@ namespace CSharpNotes
             strList.AddRange(strArray);
             strList.Add("seven");
 
-            Console.WriteLine(string.Join(",", strList));
+            strList.ForEach(p => Console.Write("{0} ", p));
+            Console.WriteLine();
             Console.WriteLine("Is strList empty? " + !strList.Any());
 
 

@@ -11,14 +11,16 @@ namespace CSharpNotes
             // Looping.Demo();
             // ArraysListsSetsDicts.Demo();
             // Strings.Demo();
-            // LinqQ.Demo();
+            LinqQ.Demo();
             // ExceptionHandling.Demo();
             // LambdasDelegates.Demo();
             // Methods.Demo();
             // Misc.Demo();
             // DatesTimes.Demo();
-            ClassDemo.Demo();
+            // ClassDemo.Demo();
+            // ScrapeClient.Demo();
 
+            Console.WriteLine("\nHit enter.");
             Console.ReadLine();
 
         }
