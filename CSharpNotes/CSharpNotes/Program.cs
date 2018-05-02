@@ -11,8 +11,8 @@ namespace CSharpNotes
             // Looping.Demo();
             // ArraysListsSetsDicts.Demo();
             // Strings.Demo();
-            LinqQ.Demo();
-            // ExceptionHandling.Demo();
+            // LinqQ.Demo();
+            ExceptionHandling.Demo();
             // LambdasDelegates.Demo();
             // Methods.Demo();
             // Misc.Demo();

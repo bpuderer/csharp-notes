@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpNotes.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,6 @@ namespace CSharpNotes
                                         where num > 7
                                         orderby num ascending
                                         select num;
-            // TODO: better example. anon type.  var things = ... select new { field1, ... };
-            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types
 
             // query not executed until iteration
             Console.WriteLine(String.Join(',', numQuery));
@@ -29,6 +28,25 @@ namespace CSharpNotes
             nums.Add(13);
             // can query execute more than once
             Console.WriteLine(String.Join(',', numQuery));
+
+
+            List<Car> cars = new List<Car>()
+            {
+                new Car() { Make = "Honda", Model = "Accord", Year=2012 },
+                new Car() { Make = "Honda", Model = "Civic", Year=2010 },
+                new Car() { Make = "Honda", Model = "Civic", Year=2008 },
+                new Car() { Make = "Nissan", Model = "Maxima", Year=2005 }
+            };
+            // Anonymous type
+            // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types
+            var carQuery = from car in cars
+                           where car.Model == "Civic"
+                           select new { car.Year };
+            foreach (var car in carQuery)
+            {
+                Console.WriteLine("Civic year: {0}", car.Year);
+            }
+
 
 
             // method
@@ -51,7 +69,10 @@ namespace CSharpNotes
             int firstDivisibleBySeven = nums.FirstOrDefault(n => n % 7 == 0);
             Console.WriteLine($"First element that's divisible by 7: {firstDivisibleBySeven}");
 
-            // TODO: better example.  var orderedThings = things.OrderByDescending(p => p.Field);
+            foreach (var car in cars.OrderBy(p => p.Year))
+            {
+                Console.WriteLine("{0} {1} {2}", car.Make, car.Model, car.Year);
+            }
 
 
             // all

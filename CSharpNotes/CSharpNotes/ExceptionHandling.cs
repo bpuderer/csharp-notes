@@ -34,7 +34,7 @@ namespace CSharpNotes
             }
             catch (ArgumentOutOfRangeException ex)
             {
-                Console.WriteLine($"Caught ArgumentOutOfRangeException:\n{ex}");
+                Console.WriteLine($"Caught ArgumentOutOfRangeException:\n{ex.Message}");
             }
 
         }

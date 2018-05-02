@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpNotes.Classes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,17 +23,22 @@ namespace CSharpNotes
                 Console.WriteLine("zero");
             }
 
-            switch (i)
+            // tip: type sw then hit tab tab (snippet)
+            // now with "switch_on" highlighted, type the enum type (replacing it)
+            // and hit Enter twice. cases are populated with different enum vals
+            Car.CarType ct = Car.CarType.Coupe;
+            switch (ct)
             {
-                case 1:
-                    Console.WriteLine("1");
+                case Car.CarType.Sedan:
+                    Console.WriteLine("4 doors");
                     break;
-                case 2:
-                case 3:
-                    Console.WriteLine("2 or 3");
+                case Car.CarType.Hatchback:
+                    Console.WriteLine("2 or 4 doors plus hatch");
+                    break;
+                case Car.CarType.Coupe:
+                    Console.WriteLine("2 doors");
                     break;
                 default:
-                    Console.WriteLine("not 1, 2 or 3");
                     break;
             }
 

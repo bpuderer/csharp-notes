@@ -28,6 +28,9 @@ namespace CSharpNotes
             int? x = null;
             int y = x ?? -1;
             Console.WriteLine(String.Format("x: {0}, y: {1}", x, y));
+
+            const int secondsInDay = 86400;
+
         }
     }
 }
