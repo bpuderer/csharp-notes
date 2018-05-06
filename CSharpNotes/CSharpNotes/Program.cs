@@ -12,15 +12,16 @@ namespace CSharpNotes
             // ArraysListsSetsDicts.Demo();
             // Strings.Demo();
             // LinqQ.Demo();
-            ExceptionHandling.Demo();
+            // ExceptionHandling.Demo();
             // LambdasDelegates.Demo();
             // Methods.Demo();
             // Misc.Demo();
             // DatesTimes.Demo();
             // ClassDemo.Demo();
             // ScrapeClient.Demo();
+            Events.Demo();
 
-            Console.WriteLine("\nHit enter.");
+            Console.WriteLine("\nHit enter to exit.");
             Console.ReadLine();
 
         }
