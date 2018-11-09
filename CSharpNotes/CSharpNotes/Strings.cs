@@ -18,10 +18,10 @@ namespace CSharpNotes
             int i1 = 1;
             int i2 = 2;
             // composite formatting {index[,alignment][:formatString]}
-            Console.WriteLine(String.Format("First: {0} Second: {1} First (again): {0}", i1, i2));
+            Console.WriteLine("First: {0} Second: {1} First (again): {0}", i1, i2);
 
             // string interpolation {<interpolatedExpression>[,<alignment>][:<formatString>]}
-            Console.WriteLine(String.Format($"First: {i1} Second: {i2}"));
+            Console.WriteLine($"First: {i1} Second: {i2}");
 
             int[] intArray = { 9000, 1000, 1337 };
             Console.WriteLine(String.Join(",", intArray));
